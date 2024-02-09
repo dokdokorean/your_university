@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당신은 합격한다.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="title">2025학년도 대학수학능력시험</p>
+        <p id="countdown">00</p>
+    </header>
+    <main>    
+        <div id="universityImage">
+        </div>
+        <label for="universitySelect"></label>
+        <select id="universitySelect" onchange="changeUniversity()">
+        <option value="seoul">서울대학교</option>
+        <option value="yonsei">연세대학교</option>
+        <option value="korea">고려대학교</option>
+    </select>
+    <p>에 지원하여 합격하게 될 나는</p>
+    <form id="applicationForm">
+        <div>
+            <label for="name">성&nbsp; &nbsp;&nbsp; &nbsp;명:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="birthdate">생년월일:</label>
+            <input type="text" id="birth" name="birthdate" required>
+        </div>
+        <div>
+            <label for="applicationType">지원전형:&nbsp;&nbsp;&nbsp;</label>
+            <select id="applicationType" name="applicationType" required>
+                <option value="type1">전형1</option>
+                <option value="type2">전형2</option>
+                <option value="type3">전형3</option>
+            <!-- 다른 전형 옵션들 추가 -->
+            </select>
+        </div>
+        <div>
+            <label for="recruitmentUnit">모집단위:&nbsp;&nbsp;&nbsp;</label>
+            <select id="recruitmentUnit" name="recruitmentUnit" required>
+                <option value="type1">전형1</option>
+                <option value="type2">전형2</option>
+                <option value="type3">전형3</option>
+            <!-- 다른 전형 옵션들 추가 -->
+            </select>
+        </div>
+        <button id="submit" type="submit">합격확인서 보러가기 ⇒</button>
+    </form>
+    </main>
+    <footer id="footer">
+        <p>이 사이트는 수험생들을 응원하는 마음에서 만들어진 합격증 시뮬레이션 사이트에요.</p>
+        <p>혹시라도 저의 합격증을 나쁜 곳(사칭, 위조)에 사용하거나 학교의 위상을 실추시키는 곳에 악용하면 모든 책임은 사용자에게 있음을 명시할게요.</p>
+        <p>합격증에 적혀있는 발행인은 모두 허구로 지어낸 것이에요.</p>
+        <p>궁금한 사항은 gravity0225@naver.com으로 이메일 주시면 성실하게 답변해줄게요.</p>
+        <p>이 사이트의 저작권은 개발자 ldH(github ldH)에게 있어요.</p>
+        <p>수험생 여러분! 화이팅입니다!</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
