@@ -1,3 +1,10 @@
+window.onload=function(){
+    document.getElementById('universityImage').innerHTML = '<p id="img-ment1">나는</p><p id="img-ment2">서울대학교</p><p id="img-ment3">합격한다.</p><img class="univimg" src="snu.png" alt="서울대학교">';
+document.getElementById('submit').style.backgroundColor='#012F53'
+document.getElementById('footer').style.backgroundColor='#012F53'
+handleSeoulSelection();
+}
+
 const examDate = new Date('2024-11-15T00:00:00');
 
         function updateCountdown() {
@@ -15,7 +22,7 @@ const examDate = new Date('2024-11-15T00:00:00');
         updateCountdown();
         setInterval(updateCountdown, 1000);
         // 각 대학교에 대한 'submit' 이벤트 리스너를 저장할 변수들을 선언합니다.
-let koreaSubmitListener, yonseiSubmitListener, seoulSubmitListener;
+let koreaSubmitListener, yonseiSubmitListener, seoulSubmitListener,sguSubmitListener,skkuSubmitListener,hyuSubmitListener,cauSubmitListener,khuSubmitListener,hufsSubmitListener,usSubmitListener;
 
 // 'korea' 대학을 선택했을 때 실행되는 함수
 function handleKoreaSelection() {
@@ -26,6 +33,31 @@ function handleKoreaSelection() {
     if (seoulSubmitListener) {
         document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
     }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     koreaSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
@@ -45,12 +77,37 @@ function handleKoreaSelection() {
 // 'yonsei' 대학을 선택했을 때 실행되는 함수
 function handleYonseiSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (seoulSubmitListener) {
         document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
     }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     yonseiSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
@@ -70,12 +127,38 @@ function handleYonseiSelection() {
 // 'seoul' 대학을 선택했을 때 실행되는 함수
 function handleSeoulSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
@@ -93,14 +176,39 @@ function handleSeoulSelection() {
 }
 function handlesguSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+    if (seoulSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
+    }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
-    seoulSubmitListener = function() {
+    sguSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
@@ -112,18 +220,44 @@ function handlesguSelection() {
             alert('정보를 정확히 입력하세요.')
         }  
     };
-    document.getElementById('submit').addEventListener('click', seoulSubmitListener);
+    document.getElementById('submit').addEventListener('click', sguSubmitListener);
 }
 function handleskkuSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+    if (seoulSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
+    }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+ 
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
-    seoulSubmitListener = function() {
+    skkuSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
@@ -135,18 +269,40 @@ function handleskkuSelection() {
             alert('정보를 정확히 입력하세요.')
         }  
     };
-    document.getElementById('submit').addEventListener('click', seoulSubmitListener);
+    document.getElementById('submit').addEventListener('click', skkuSubmitListener);
 }
 function handlehyuSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+    if (seoulSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
+    }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
-    seoulSubmitListener = function() {
+    hyuSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
@@ -158,18 +314,40 @@ function handlehyuSelection() {
             alert('정보를 정확히 입력하세요.')
         }  
     };
-    document.getElementById('submit').addEventListener('click', seoulSubmitListener);
+    document.getElementById('submit').addEventListener('click', hyuSubmitListener);
 }
 function handlecauSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+    if (seoulSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
+    }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
-    seoulSubmitListener = function() {
+    cauSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
@@ -181,18 +359,40 @@ function handlecauSelection() {
             alert('정보를 정확히 입력하세요.')
         }  
     };
-    document.getElementById('submit').addEventListener('click', seoulSubmitListener);
+    document.getElementById('submit').addEventListener('click', cauSubmitListener);
 }
 function handlekhuSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+    if (seoulSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
+    }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
-    seoulSubmitListener = function() {
+    khuSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
@@ -204,18 +404,40 @@ function handlekhuSelection() {
             alert('정보를 정확히 입력하세요.')
         }  
     };
-    document.getElementById('submit').addEventListener('click', seoulSubmitListener);
+    document.getElementById('submit').addEventListener('click', khuSubmitListener);
 }
 function handlehufsSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+    if (seoulSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
+    }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (usSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', usSubmitListener);
+    }
+    
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
-    seoulSubmitListener = function() {
+    hufsSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
@@ -227,18 +449,43 @@ function handlehufsSelection() {
             alert('정보를 정확히 입력하세요.')
         }  
     };
-    document.getElementById('submit').addEventListener('click', seoulSubmitListener);
+    document.getElementById('submit').addEventListener('click', hufsSubmitListener);
 }
 function handleusSelection() {
     // 이전에 추가된 'submit' 이벤트 리스너를 제거합니다.
-    if (koreaSubmitListener) {
-        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
-    }
     if (yonseiSubmitListener) {
         document.getElementById('submit').removeEventListener('click', yonseiSubmitListener);
     }
+    if (seoulSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', seoulSubmitListener);
+    }
+    if (koreaSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', koreaSubmitListener);
+    }
+    if (sguSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', sguSubmitListener);
+    }
+    if (skkuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', skkuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (hyuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hyuSubmitListener);
+    }
+    if (cauSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', cauSubmitListener);
+    }
+    if (khuSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', khuSubmitListener);
+    }
+    if (hufsSubmitListener) {
+        document.getElementById('submit').removeEventListener('click', hufsSubmitListener);
+    }
+
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
-    seoulSubmitListener = function() {
+    usSubmitListener = function() {
         if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
@@ -250,7 +497,7 @@ function handleusSelection() {
             alert('정보를 정확히 입력하세요.')
         }  
     };
-    document.getElementById('submit').addEventListener('click', seoulSubmitListener);
+    document.getElementById('submit').addEventListener('click', usSubmitListener);
 }
 function changeUniversity() {
     const selectElement = document.getElementById('universitySelect');
@@ -317,7 +564,10 @@ function changeUniversity() {
                     handleusSelection();
                     break;
                 default:
-                    imageDiv.innerHTML = '';
+                    imageDiv.innerHTML = '<p id="img-ment1">나는</p><p id="img-ment2">서울대학교</p><p id="img-ment3">합격한다.</p><img class="univimg" src="snu.png" alt="서울대학교">';
+                    document.getElementById('submit').style.backgroundColor='#012F53'
+                    document.getElementById('footer').style.backgroundColor='#012F53'
+                    handleSeoulSelection();
                     break;
             }
             // 사용자가 선택한 대학교에 따라 이미지 변경
