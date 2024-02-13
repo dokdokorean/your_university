@@ -284,7 +284,7 @@ function changeUniversity() {
                     imageDiv.innerHTML = '<p id="img-ment1">나는</p><p id="img-ment2">성균관대학교</p><p id="img-ment3">합격한다.</p><img class="univimg" src="skku.png" alt="성균관대학교">';
                     document.getElementById('submit').style.backgroundColor='#67A500'
                     document.getElementById('footer').style.backgroundColor='#67A500'
-                    handleskkulSelection();
+                    handleskkuSelection();
                     break;
                 case 'hyu':
                     imageDiv.innerHTML = '<p id="img-ment1">나는</p><p id="img-ment2">한양대학교</p><p id="img-ment3">합격한다.</p><img class="univimg" src="hanyang.png" alt="한양대학교">';
