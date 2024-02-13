@@ -71,11 +71,14 @@ main {
 }
 #img-ment2{
     top: 110px;
+    width: 100%;
+    text-align: center;
     font-size: 30px;
     font-family: 'SB';
 }
 #img-ment3{
     top: 170px;
+    width: fit-content;
     font-family: 'el';
 }
 .univimg{

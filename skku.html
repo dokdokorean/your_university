@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungkyunkwan University</title>
+</head>
+<style>
+    @font-face {
+        font-family: "M";
+        src: url("Pretendard-Medium.ttf") format("truetype");
+      }
+    @font-face {
+        font-family: "L";
+        src: url("Pretendard-Light.ttf") format("truetype");
+      }
+    @font-face {
+        font-family: "SB";
+        src: url("Pretendard-SemiBold.ttf") format("truetype");
+      }
+    @font-face {
+        font-family: "R";
+        src: url("Pretendard-Regular.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "el";
+        src: url("Pretendard-ExtraLight.ttf") format("truetype");
+      }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: auto;
+            width: 500px;
+            z-index: -1;
+        }
+    p{
+        font-family: 'L';
+    }
+    #name1{
+        position: absolute;
+        top: 180px;
+        left: 140px;
+    }
+    #birth1{
+        position: absolute;
+        top: 225px;
+        left: 140px;
+    }
+    #app1{
+        position: absolute;
+        top: 274px;
+        left: 140px;
+    }
+    #dpt1{
+        position: absolute;
+        top: 317px;
+        left: 140px;
+    }
+</style>
+<body>
+    <p id="birth1">0</p>
+    <p id="name1">0</p>
+    <p id="dpt1">0</p>
+    <p id="app1">0</p>
+    <img src="skku_paper.png">
+</body>
+<script>
+    window.onload=function(){
+
+        if(localStorage.getItem('birth')){
+        var birth = localStorage.getItem('birth')}
+        document.getElementById('birth1').innerText=birth
+
+
+        if(localStorage.getItem('name')){
+        var name = localStorage.getItem('name')}
+        document.getElementById('name1').innerText=name
+    
+        if(localStorage.getItem('dpt')){
+        var dpt = localStorage.getItem('dpt')}
+        document.getElementById('dpt1').innerText=dpt;
+
+        if(localStorage.getItem('app')){
+        var ad = localStorage.getItem('app')}
+        document.getElementById('app1').innerText=ad;
+    }
+</script>
+</html>
