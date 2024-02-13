@@ -28,7 +28,7 @@ function handleKoreaSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     koreaSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -53,7 +53,7 @@ function handleYonseiSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     yonseiSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -78,7 +78,7 @@ function handleSeoulSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -101,7 +101,7 @@ function handlesguSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -124,7 +124,7 @@ function handleskkuSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -147,7 +147,7 @@ function handlehyuSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -170,7 +170,7 @@ function handlecauSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -193,7 +193,7 @@ function handlekhuSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -216,7 +216,7 @@ function handlehufsSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
@@ -239,7 +239,7 @@ function handleusSelection() {
     }
     // 새로운 'submit' 이벤트 리스너를 추가합니다.
     seoulSubmitListener = function() {
-        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length==8)
+        if(document.getElementById('name').value!='' && document.getElementById('dpt_1')!='' && document.getElementById('ad_1')!='' && document.getElementById('birth').value!='' && document.getElementById('birth').value.length!=0)
         {
             localStorage.setItem('name',document.getElementById('name').value);
             localStorage.setItem('dpt',document.getElementById('recruitmentUnit').value);
