@@ -5,7 +5,7 @@ document.getElementById('footer').style.backgroundColor='#012F53'
 handleSeoulSelection();
 }
 
-const examDate = new Date('2024-11-15T00:00:00');
+const examDate = new Date('2024-11-14T00:00:00');
 
         function updateCountdown() {
             const currentDate = new Date();
